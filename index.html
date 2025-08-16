@@ -62,12 +62,28 @@
       color: #ffd700;
     }
 
-    #comments {
+    #comments, #delete-comment {
       max-width: 900px;
       margin: 40px auto;
       padding: 20px;
       background: #2e2e2e;
       border-radius: 12px;
+    }
+
+    #delete-comment button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      background-color: #ff6f61;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    #delete-comment p {
+      color: #ccc;
+      font-size: 14px;
+      margin-top: 5px;
     }
   </style>
 </head>
@@ -99,7 +115,8 @@
 
   <section>
     <h2>Map of Hallownest</h2>
-    <img class="map" src="https://vignette.wikia.nocookie.net/hollowknight/images/2/2f/Hallownest_Map.png" alt="Hallownest Map">
+    <img class="map" src="https://cdn.generationvoyage.fr/2020/02/guide-montagnes-atlas-630x420.jpg" alt="Hallownest Map">
+    <p>this is not halownest map lol. still better thos
   </section>
 
   <!-- Giscus Comment Section -->
@@ -120,10 +137,23 @@
             async>
     </script>
   </section>
+
+  <!-- Delete Comment Button -->
+  <section id="delete-comment">
+    <button onclick="window.open('https://github.com/mes3odiii/mes3odiii.github.io/issues', '_blank')">
+      Delete your comment
+    </button>
+    <p>Click the button to go to the GitHub page where you can delete your comment. You must be logged into your GitHub account.</p>
+  </section>
 </main>
 
 <footer>
   Now you see 🤫 BLUH BLUH BLUH
+</footer>
+
+</body>
+</html>
+
 </footer>
 
 </body>
